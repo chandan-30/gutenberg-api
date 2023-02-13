@@ -1,0 +1,11 @@
+/**
+ * The following styles gets applied on the frontend
+ *
+ */
+ 
+
+.wp-block-myguten-block-test-block {
+    font-weight: bolder;
+    color: red;
+    background-color: black ;
+}
