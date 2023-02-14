@@ -3,9 +3,62 @@
  *
  */
  
+ @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 
- .wp-block-myguten-block-test-block {
-    font-weight: bolder;
-    color: rgb(189, 189, 189);
-    background-color: black ;
+ $myFont: 'Gentium Book Plus', serif;
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+    .box {
+        width: 450px;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 15px;
+
+        &:first-of-type {
+            background-color: #13E6EC;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-family: $myFont;
+        }
+
+        p {
+            opacity: 80%;
+            font-family: $myFont;
+        }
+
+        h2 {
+            display: inline-block;
+            font-family: $myFont;
+            margin-left: 10px;
+        }
+
+        .btn {
+            display: block;
+            margin: 0 auto;
+            font-family: $myFont;
+            background-color: #DEF3F4;
+            color: black;
+            padding: 1px 20px;
+            border-radius: 30px;
+            font-size: larger;
+        }
+
+        ul {
+            font-family: $myFont;
+            list-style-type: none;
+
+            li {
+                font-size:medium;
+                font-weight:800;
+            }
+        }
+    }
 }

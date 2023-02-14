@@ -2,13 +2,75 @@
  * The following styles gets applied in the editor.
  *
  */
- 
- .wp-block-myguten-block-test-block {
-    font-weight: bolder;
-    color: white !important;
-    background-color: black ;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
 
-.edit_h3 {
-    color: rgb(8, 39, 45);
+ $myFont: 'Gentium Book Plus', serif;
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+    .box {
+        width: 450px;
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 15px;
+
+        &:first-of-type {
+            background-color: #13E6EC;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-family: $myFont;
+            &:hover {
+                background-color: #0d0c0c42;
+            }
+        }
+
+        p {
+            opacity: 80%;
+            font-family: $myFont;
+            &:hover {
+                background-color: #0d0c0c42;
+            }
+        }
+
+        h2 {
+            display: inline-block;
+            font-family: $myFont;
+            margin-left: 10px;
+            &:hover {
+                background-color: #0d0c0c42;
+            }
+        }
+
+        .btn {
+            display: block;
+            margin: 0 auto;
+            font-family: $myFont;
+            background-color: #DEF3F4;
+            color: black;
+            padding: 1px 20px;
+            border-radius: 30px;
+            font-size: larger;
+        }
+
+        ul {
+            font-family: $myFont;
+            list-style-type: none;
+
+            li {
+                font-size:medium;
+                font-weight:800;
+
+                &:hover {
+                    background-color: #0d0c0c42;
+                }
+            }
+        }
+    }
 }
