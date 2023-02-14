@@ -1,0 +1,13 @@
+/**
+ * The following styles gets applied in the editor.
+ *
+ */
+.wp-block-myguten-block-test-block {
+  font-weight: bolder;
+  color: white !important;
+  background-color: black; }
+
+.edit_h3 {
+  color: #08272d; }
+
+/*# sourceMappingURL=editor.css.map */
