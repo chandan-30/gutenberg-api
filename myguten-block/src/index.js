@@ -30,9 +30,16 @@ registerBlockType('myguten-block/test-block', {
             selector: 'p',
         }
     },
+    "supports": {
+        "color": {
+            "text": true,
+            "background": true,
+            "link": true
+        }
+    },
     /**
 	 * @see ./edit.js
-	 */
+	 */ 
     edit: Edit,
     /**
 	 * @see ./save.js

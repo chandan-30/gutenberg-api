@@ -4,6 +4,7 @@
  */
 import { TextControl, Placeholder } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
+import { useBlockProps, RichText } from '@wordpress/block-editor';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -21,6 +22,7 @@ import { __ } from '@wordpress/i18n';
 const Edit = ( props ) => {
         
     const { attributes, setAttributes, isSelected } = props;
+    const blockProps = useBlockProps();
     const onEdit = ( newContent ) => {
         setAttributes( { content: newContent } )
     }
@@ -28,16 +30,15 @@ const Edit = ( props ) => {
         attributes['content'] && !isSelected ? (
             <h3 className='edit_h3'>{ attributes.content }</h3>
         ) : (
-            <Placeholder
-                    label = {__('MyGuten Custom Block', 'my-guten-block-plugin')}
-                    instructions={__('Add your content', 'my-guten-block-plugin')}>
-                
-                <TextControl 
-                    tagName = "p"
-                    onChange = { onEdit }
-                    value = {attributes.content}
+            <div {...useBlockProps} >
+                <RichText
+                    label = 'pls'
+                    tagName="div"
+                    onChange={ onEdit }
+                    value={ !attributes.content.length? '':  attributes.content}
                 />
-            </Placeholder>
+                
+                </div>
         )
     );
 }

@@ -1,3 +1,4 @@
+import { useBlockProps, RichText } from '@wordpress/block-editor';
 /**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup.
@@ -8,8 +9,15 @@
  */
 const Save = ( props ) => {
     console.log('saved attributes', props.attributes);
+    const blockProps = useBlockProps.save();
     return (
-        <h3>{props.attributes.content} </h3>
+        <div {...blockProps}>
+            <RichText.Content 
+                tagName='div'
+                className='chandan'
+                value={props.attributes.content}
+            />
+        </div>
     );
 }
 
