@@ -6,21 +6,24 @@
 .container-box {
   display: flex;
   flex-wrap: wrap;
-  text-align: center; }
+  text-align: center;
+  border-radius: 15px;
+  max-width: 300px; }
   .container-box .box {
-    width: 450px;
+    width: 300px;
     margin: 10px;
     padding: 10px;
     color: white;
-    border-radius: 15px; }
-    .container-box .box:first-of-type {
-      background-color: #13E6EC; }
+    border-radius: 15px;
+    background-color: #4AA1F4; }
     .container-box .box h3 {
       font-weight: bold;
-      font-family: "Gentium Book Plus", serif; }
+      font-family: "Gentium Book Plus", serif;
+      margin-top: 32px; }
     .container-box .box p {
       opacity: 80%;
-      font-family: "Gentium Book Plus", serif; }
+      font-family: "Gentium Book Plus", serif;
+      margin-top: 48px; }
     .container-box .box h2 {
       display: inline-block;
       font-family: "Gentium Book Plus", serif;
@@ -36,9 +39,17 @@
       font-size: larger; }
     .container-box .box ul {
       font-family: "Gentium Book Plus", serif;
-      list-style-type: none; }
+      list-style-type: none;
+      padding: 0px !important; }
       .container-box .box ul li {
         font-size: medium;
         font-weight: 800; }
+        .container-box .box ul li:first-of-type {
+          margin-top: 64px; }
+        .container-box .box ul li:last-of-type {
+          margin-bottom: 16px; }
+    .container-box .box .wp-block-button {
+      margin-top: 32px;
+      margin-bottom: 16px; }
 
 /*# sourceMappingURL=style.css.map */

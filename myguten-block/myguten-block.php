@@ -11,6 +11,18 @@
  * 
  */
 
+ function custom_block_render_callback( $attributes, $content ) {
+	// Code to process attributes and generate output goes here
+	
+	ob_start();
+	// Render the block markup
+	include dirname(__FILE__) . '/markup.php';
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $output;
+  } 
+
+
  /**
   * Handles the registration of script, stylesheets and bloc
   *
@@ -46,6 +58,7 @@ function my_custom_block_register_block() {
 		'editor_script' => 'my-custom-block',
 		'editor_style' => 'my-custom-block-editor-style',
 		'style' => 'my-custom-block-frontend-style',
+		'render_callback' => 'custom_block_render_callback',
 	) );
 
 }

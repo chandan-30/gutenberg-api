@@ -10,6 +10,7 @@
   "author": "Chandan",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/scripts": "25.3.0"
+    "@wordpress/scripts": "25.3.0",
+    "@wordpress/server-side-render": "4.3.0"
   }
 }
