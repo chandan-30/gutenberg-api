@@ -1,0 +1,22 @@
+{
+  "name": "myguten-block",
+  "version": "1.0.0",
+  "description": "Gutenberg Custom Block Plugin",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Chandan",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "25.3.0",
+    "@wordpress/server-side-render": "4.3.0",
+    "grunt": "^1.6.1",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.2.2"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.4.3"
+  }
+}
