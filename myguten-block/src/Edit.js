@@ -52,7 +52,7 @@ const Edit = ( props ) => {
 
                     <RichText
                         style={ { textAlign: attributes.alignment } }
-                        tagName="h3"
+                        tagName="h4"
                         onChange={ onEdit }
                         value={ attributes.content}
                         placeholder= {__('PERSONAL EDITION','my-guten-block-plugin')}

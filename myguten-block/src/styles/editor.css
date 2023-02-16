@@ -7,7 +7,8 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  max-width: 450px !important; }
+  max-width: 450px !important;
+  box-sizing: border-box !important; }
   .container-box .box {
     width: 450px;
     margin: 10px;
@@ -15,11 +16,12 @@
     color: white;
     border-radius: 15px; }
     .container-box .box:first-of-type {
-      background-color: #4AA1F4; }
-    .container-box .box h3 {
+      background-color: transparent;
+      background-image: linear-gradient(170deg, #FFCC5E 0%, #FF960F 100%); }
+    .container-box .box h4 {
       font-weight: bold;
       font-family: "Gentium Book Plus", serif; }
-      .container-box .box h3:hover {
+      .container-box .box h4:hover {
         background-color: #0d0c0c42; }
     .container-box .box p {
       opacity: 80%;

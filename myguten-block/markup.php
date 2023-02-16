@@ -2,7 +2,7 @@
     //HTML markup to be rendered on frontend
     $html = '<div class="container-box">
                 <div class="box">
-                    <h3>' . $attributes['content'] . '</h3>
+                    <h4>' . $attributes['content'] . '</h4>
                     <p>' . $attributes['description'] . '</p>
                     <ul>
                         <li>' . $attributes['support'] . '</li>

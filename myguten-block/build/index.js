@@ -77,7 +77,7 @@ const Edit = props => {
     style: {
       textAlign: attributes.alignment
     },
-    tagName: "h3",
+    tagName: "h4",
     onChange: onEdit,
     value: attributes.content,
     placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('PERSONAL EDITION', 'my-guten-block-plugin')
