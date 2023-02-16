@@ -1,0 +1,56 @@
+/**
+ * The following styles gets applied in the editor.
+ *
+ */
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap");
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 450px !important;
+  box-sizing: border-box !important; }
+  .container-box .box {
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 15px; }
+    .container-box .box:first-of-type {
+      background-color: transparent;
+      background-image: linear-gradient(170deg, #FFCC5E 0%, #FF960F 100%); }
+    .container-box .box h4 {
+      font-weight: bold;
+      font-family: "Gentium Book Plus", serif; }
+      .container-box .box h4:hover {
+        background-color: #0d0c0c42; }
+    .container-box .box p {
+      opacity: 80%;
+      font-family: "Gentium Book Plus", serif; }
+      .container-box .box p:hover {
+        background-color: #0d0c0c42; }
+    .container-box .box h2 {
+      display: inline-block;
+      font-family: "Gentium Book Plus", serif;
+      margin-left: 10px; }
+      .container-box .box h2:hover {
+        background-color: #0d0c0c42; }
+    .container-box .box .btn {
+      display: block;
+      margin: 0 auto;
+      font-family: "Gentium Book Plus", serif;
+      background-color: #DEF3F4;
+      color: black;
+      padding: 1px 20px;
+      border-radius: 30px;
+      font-size: larger; }
+    .container-box .box ul {
+      font-family: "Gentium Book Plus", serif;
+      list-style-type: none;
+      padding: 0px !important; }
+      .container-box .box ul li {
+        font-size: medium;
+        font-weight: 800; }
+        .container-box .box ul li:hover {
+          background-color: #0d0c0c42; }
+
+/*# sourceMappingURL=editor.css.map */
